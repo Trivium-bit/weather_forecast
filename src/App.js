@@ -1,7 +1,7 @@
+import "bootstrap/dist/css/bootstrap.css";
 import React, { Component } from "react";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
-import { Navbar, NavItem, Nav, Row, Col, Grid } from "react-bootstrap";
+import { Navbar, NavItem, Nav, Row, Col,  } from "react-bootstrap";
 
 
 const PLACES = [
