@@ -1,11 +1,12 @@
-import "bootstrap/dist/css/bootstrap.css";
 import React, { Component } from "react";
 import "./App.css";
-import { Navbar, NavItem, Nav, Row, Col, } from "react-bootstrap";
+// import "bootstrap/dist/css/bootstrap.css";
+import "bootswatch/dist/sketchy/bootstrap.css";
 
+import { Navbar, NavItem, Nav, Grid, Row, Col } from "react-bootstrap";
 
 const PLACES = [
-  { name: "Palo Alto", zip: "94303" },
+  { name: "Minsk", zip: "220002" },
   { name: "San Jose", zip: "94088" },
   { name: "Santa Cruz", zip: "95062" },
   { name: "Honolulu", zip: "96803" }
@@ -65,7 +66,7 @@ class App extends Component {
             </Navbar.Brand>
           </Navbar.Header>
         </Navbar>
-       {/*  <Grid> */}
+        <Grid>
           <Row>
             <Col md={4} sm={4}>
               <h3>Select a city</h3>
@@ -86,7 +87,7 @@ class App extends Component {
               <WeatherDisplay key={activePlace} zip={PLACES[activePlace].zip} />
             </Col>
           </Row>
-        {/* </Grid> */}
+        </Grid>
       </div>
     );
   }
