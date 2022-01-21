@@ -65,7 +65,7 @@ class App extends Component {
             </Navbar.Brand>
           </Navbar.Header>
         </Navbar>
-        <Grid>
+       {/*  <Grid> */}
           <Row>
             <Col md={4} sm={4}>
               <h3>Select a city</h3>
@@ -86,7 +86,7 @@ class App extends Component {
               <WeatherDisplay key={activePlace} zip={PLACES[activePlace].zip} />
             </Col>
           </Row>
-        </Grid>
+        {/* </Grid> */}
       </div>
     );
   }
